@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            table {
+                border: 3px solid black;
+                border-collapse: collapse;
+            }
+            th,td {
+                border: 2px solid blue;
+                border-collapse: collapse;
+                padding: 10px;
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Soil type</th>
+                    <th>Football clubs</th>
+                    <th>Continents</th>          
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>clayey</td>
+                    <td>Arsenal</td>
+                    <td>Africa</td>
+                </tr>
+                <tr>
+                    <td>Loamey</td>
+                    <td>Barcelona</td>
+                    <td>North America</td>
+                </tr>
+                <tr>
+                    <td>Sandy</td>
+                    <td>PSG</td>
+                    <td>Europe</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <div>
+                I declare that all the answers that will be provided below are correct to the best of my knowledge
+            </div>  
+            <div>
+                NAME
+                <input name="Name" type="text" placeholder="Full name">
+            </div>
+            <div>
+                AGE
+                <input name="Age" type="number" placeholder="Age">
+                <input type="submit"
+            </div>
+            <div>
+                Hottest Continent
+                <input name="Continent" list="Continents" placeholder="Continent">
+                <datalist id="Continents">
+                    <option value="Africa">
+                    <option value="North America"> 
+                    <option value="Europe>" 
+                </datalist>
+            </div>
+            <div>
+                Best Soil for Planting
+                <input name="Soil" type="radio" value="black"> Loamey
+                <input name="Soil" type="radio" value="brown"> clayey
+                <input name="Soil" type="radio" value="aqua"> Sandy
+            </div>
+            <div>
+                Your Favourite club
+                <input name="Club" list="Clubs" placeholder="Club"
+                <datalist id="Clubs">
+                    <option value="Arsenal">
+                    <option value="Barcelona">
+                    <option value="PSG">
+                </datalist>
+            </div>
+        </form>
+    </body>
+</html>
